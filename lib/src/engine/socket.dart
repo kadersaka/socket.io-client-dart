@@ -478,8 +478,8 @@ class Socket extends EventEmitter {
     id = data['sid'];
     transport!.query!['sid'] = data['sid'];
     upgrades = filterUpgrades(data['upgrades']);
-    pingInterval = data['pingInterval'];
-    pingTimeout = data['pingTimeout'];
+    pingInterval = int.parse(data['pingInterval'].toString());
+    pingTimeout = int.parse(data['pingTimeout'].toString());
     onOpen();
     // In case open handler closes socket
     if ('closed' == readyState) return;

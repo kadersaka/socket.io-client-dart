@@ -8,7 +8,7 @@ import 'package:socket_io_common/src/util/event_emitter.dart';
 ///
 /// @param {Object|EventEmitter} obj with `Emitter` mixin or `EventEmitter`
 /// @param {String} event name
-/// @param {Function} callback
+/// @param {Function} callbackpingInterval
 /// @api public
 ///
 Destroyable on(EventEmitter obj, String ev, EventHandler fn) {
